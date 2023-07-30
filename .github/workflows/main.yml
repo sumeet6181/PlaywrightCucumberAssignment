@@ -1,26 +1,33 @@
 name: PlayWrightTest
 env:
   CI: true
+  DEBUG: pw:api
+
 on:
   push:
+
 jobs:
+
   run:
     strategy:
       matrix:
         node: ['16', '18' ]
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node }}
+    - name: npm ci
+      run: npm ci
     - name: install packages
       run: npm install
     - name: install Playwright
       run: npx playwright install --with-deps > /dev/null
     - name: run features
       run: npm run test:e2e
-    - name: genrate report
+    - name: run report
       run: npm run report
     - name: Upload test results
       if: always()
