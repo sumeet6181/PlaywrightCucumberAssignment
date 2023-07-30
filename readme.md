@@ -9,5 +9,5 @@ Installation steps
 4.  Open terminal and Run command npm install
 5.  npm playwright install
 
-TO RUN Tests:- npm run test:e2e tests/acceptance/features/todo.feature
+TO RUN Tests:- npm run test:e2e 
 TO GENERATE Report:- npm run report

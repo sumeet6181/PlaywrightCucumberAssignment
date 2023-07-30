@@ -26,7 +26,7 @@ Before({ tags: "@web" }, async function () {
     viewport: { width: 1920, height: 1080 },
   });
   globalThis.page = await global.context.newPage();
-  await globalThis.page.goto("https://practicetestautomation.com/practice-test-login/");
+  await globalThis.page.goto(this.parameters.Url);
 });
 
 // Cleanup after each scenario
