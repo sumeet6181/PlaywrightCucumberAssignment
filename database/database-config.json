@@ -1,0 +1,16 @@
+{
+    "msSQL":{
+    "server": "localhost",
+    "user": "sa",
+    "password": "mwp135",
+    "database": "demo",
+    "trustServerCertificate": true
+    },
+    "mySQL":{
+        "host": "localhost",
+        "user": "U_playwright",
+        "password": "Beschuit@123",
+        "database": "world"
+    }
+    
+    }
