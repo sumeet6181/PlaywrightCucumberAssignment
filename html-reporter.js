@@ -7,7 +7,7 @@ var options={
     brandTitle:"Demo Test Scenarios",
     theme:"bootstrap",
     jsonFile:"Reports/cucumber_report.json",
-    output:"Reports/cucumber_report"+currentDate+".html",
+    output:"Reports/cucumber_report.html",
     screenshotsDirectory:"./screenshots",
     storeScreenshots:true,
     reportSuiteAsScenarios: true,
