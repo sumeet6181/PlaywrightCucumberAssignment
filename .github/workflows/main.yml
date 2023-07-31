@@ -1,5 +1,4 @@
 name: PlayWrightTest
-
 env:
   CI: true
   DEBUG: pw:api
@@ -28,9 +27,11 @@ jobs:
       run: npx playwright install --with-deps > /dev/null
     - name: run features
       run: npm run test:e2e
+    - name: run report
+      run: npm run report
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v3
       with:
         name: test-result-report
-        path: reports/report.html
+        path: Reports/cucumber_report.html
