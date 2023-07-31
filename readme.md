@@ -7,7 +7,7 @@ Installation steps
 3.  Open VS code 
 4.  Clone repo from  https://github.com/sumeet6181/PlaywrightCucumberAssignment.git
 4.  Open terminal and Run command "npm install"
-5.  Then execute command "npm playwright install"
+5.  Then execute command "npx playwright install"
 
 TO RUN Tests:- npm run test:e2e 
 TO generate Report:- npm run report
