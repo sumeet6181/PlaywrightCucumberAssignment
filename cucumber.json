@@ -10,7 +10,8 @@
     "format": [
         "json:Reports/cucumber_report.json"
       ],
-      "worldParameters":{"Url":"https://practicetestautomation.com/practice-test-login/"},
+      "worldParameters":{"Url":"https://practicetestautomation.com/practice-test-login/",
+    "headLesBrowser": true},
       "parallel": 1
 }
 }

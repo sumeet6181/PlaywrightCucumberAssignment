@@ -1,7 +1,7 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
 const { getLocator } = require("../pages/page-factory");
-
+// Step definitions
 When("I type {string} into {string}", async function (data, element) {
   var location = await getLocator(element);
   await location.fill(data);
